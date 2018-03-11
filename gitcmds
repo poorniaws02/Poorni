@@ -1,0 +1,42 @@
+git init
+git status
+git add filename  => ex: git add gitcmds.txt
+
+git commit -m"..."  => git commit -m"commit gitcmds.txt"
+ 
+git config --global user.email "poorniaws02@gmail.com"
+git config --global user.name "poorniaws02"
+       
+       #We can check this details using 
+       #    git config --global --edit
+       #     [credential]
+       #         UseHttpPath = true
+       #     [user]
+       #        email = poorniaws02@gmail.com
+       #       mail = poorniaws02
+      #esc :wq - save and exit
+      
+
+git remote add origin https://github.com/vijaibaskarc/devops.git
+      #To check the added ORIGIN :
+        #	$git remote -v
+        #	origin  https://github.com/poorniaws02/Poorni.git (fetch)
+        #	origin  https://github.com/poorniaws02/Poorni.git (push)
+       
+       # IF ORIGIN is NOT added properly, you will encounter below error:
+        #	C:\>git push -u origin master
+        #	fatal: 'origin' does not appear to be a git repository
+        #	fatal: Could not read from remote repository.
+
+        #	Please make sure you have the correct access rights
+        #	and the repository exists.
+
+git push -u origin master
+git push -u origin master -f
+
+https://github.com/vijaibaskarc/test.git
+
+git pull origin master
+
+git clone https://github.com/vijaibaskarc/devops.git
+
